@@ -1,0 +1,34 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <!--Facebook OG Metadata-->
+        <meta property="og:title" content="Holy Week and Easter Services at St.Thomas'">
+        <meta property="og:description" content="You're invited to join us in celebrating the most holy time of year. Come to one of beautiful worship offerings and bring a friend!">
+        <meta property="og:determiner" content="the">
+        <meta property="og:site_name" content="St. Thomas' Church Life">
+        <meta property="og:url" content="http://stthomas.life">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="http://stthomas.life/images/graphic.png">
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="1200" />
+
+  <!--Twitter Card Metadata-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@STW1698">
+        <meta name="twitter:creator" content="@punxyp">
+        <meta name="twitter:title" content="Holy Week and Easter Services at St.Thomas'">
+        <meta name="twitter:description" content="You're invited to join us and celebrate the most holy time of year. Come to one of beautiful worship offerings and bring a friend!">
+        <meta name="twitter:image:src" content="http://stthomas.life/images/graphic.png">
+</head>

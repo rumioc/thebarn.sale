@@ -1,0 +1,208 @@
+/**
+ * Basic styling
+ */
+body {
+  width: 100%;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  color: $text-color;
+  //background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+}
+
+body * {
+ //outline: 1px solid red;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: $spacing-unit / 2;
+}
+
+/**
+ * Images
+ */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-image-width: 0px;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+strong {
+ font-weight: bold;
+}
+
+em {
+ font-style: italic;   
+}
+
+/**
+ * Headings
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald;
+  text-align: center;
+  margin: 0px; 
+}
+
+/*h1 {
+ font-size: $base-font-size + ($factor * 2); 
+}
+
+h2 {
+ font-size: $base-font-size + ($factor * 1.75); 
+}
+
+h3 {
+ font-size: $base-font-size + ($factor * 1.5); 
+}
+
+h4 {
+ font-size: $base-font-size + ($factor * 1.25); 
+}
+
+h5 {
+ font-size: $base-font-size + ($factor * 1); 
+}
+
+h6 {
+ font-size: $base-font-size + ($factor * .75); 
+}*/
+
+
+/**
+ * Links
+ */
+a {
+  color: $brand-color;
+  text-decoration: underline;
+
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: black;
+  border-left: 4px solid grey;
+  padding-left: $spacing-unit / 2;
+  font-size: $base-font-size * 1.25;
+  letter-spacing: -1px;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: $base-font-size * .9;
+  border: 1px solid grey;
+  border-radius: 3px;
+  background-color: #eef;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/**
+ * Clearfix
+ */
+.clearfix {
+    width: 100%;
+    clear: both;
+}
+
+/**
+ * Icons
+ */
+.icon {
+
+  > svg {
+    display: inline-block;
+    width: $base-font-size;
+    height: $base-font-size;
+    vertical-align: middle;
+
+     path {
+      fill: grey;
+     }
+   }
+}
+
+/**
+ * Helper classes
+ */
+.wrapper {
+  padding: $spacing-unit / 2; 
+}
+.hide {
+	display: none !important;
+}
+
+.visible {
+	display: inherit !important;
+}
+.no-break {
+    white-space: nowrap;
+}
+
+.bold {
+ font-weight: 700;   
+}
