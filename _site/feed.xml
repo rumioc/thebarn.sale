@@ -4,10 +4,10 @@
     <title>The Barn Sale</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://thebarn.sale/</link>
-    <atom:link href="http://thebarn.sale/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Jul 2015 19:57:55 -0400</pubDate>
-    <lastBuildDate>Thu, 09 Jul 2015 19:57:55 -0400</lastBuildDate>
+    <link>http://rumioc/github.io/thebarn.sale/</link>
+    <atom:link href="http://rumioc/github.io/thebarn.sale/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 09 Jul 2015 20:09:40 -0400</pubDate>
+    <lastBuildDate>Thu, 09 Jul 2015 20:09:40 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
   </channel>
