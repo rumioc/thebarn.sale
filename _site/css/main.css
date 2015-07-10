@@ -292,15 +292,15 @@ header {
       font-size: 1em;
       margin: 0px;
       margin-top: 1.5em;
-      vertical-align: middle; }
-      #cta-form form input[type="email"] {
-        width: 65%;
-        border-bottom: 0.16667em dotted black;
-        font-weight: bold; }
-      #cta-form form input[type="submit"] {
-        float: right; }
-        #cta-form form input[type="submit"]:hover {
-          color: black; }
+      vertical-align: middle;
+      width: 98%;
+      border-bottom: 0.16667em dotted black;
+      font-weight: bold; }
+  #cta-form .button {
+    font-size: 1em;
+    float: right; }
+    #cta-form .button:hover {
+      color: black; }
   #cta-form .benefits p {
     margin: 0px; }
     #cta-form .benefits p:first-of-type {

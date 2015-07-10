@@ -120,19 +120,16 @@ z-index: 20;
             margin: 0px;
             margin-top: $spacing-unit;  
             vertical-align: middle;
-            
-            &[type="email"] {
-                width: 65%;  
-                border-bottom: ($base-font-size / 6) dotted black;
-                font-weight: bold;
-            }
-            
-            &[type="submit"] {
-                float: right;
-                &:hover {
-                    color: black;   
-                }
-            }
+            width: 98%;  
+            border-bottom: ($base-font-size / 6) dotted black;
+            font-weight: bold;
+        }
+    }
+    .button {
+        font-size: $base-font-size;
+        float: right;
+        &:hover {
+            color: black;   
         }
     }
     .benefits {
