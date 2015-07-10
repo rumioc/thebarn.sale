@@ -59,6 +59,7 @@ function toggleExpand() {
 /* SIMPLE SLIDER */
 function getSliders() {
     var sliders = document.getElementsByClassName("slider");
+    console.log(sliders);
     for (var i=0; i < sliders.length; i++) {
         //sliders[i].addEventListener('click', sliderFunctionality, false );
         sliderFunctionality(sliders[i]);
