@@ -283,10 +283,10 @@ header {
     text-align: left; }
     #cta-form h3:nth-of-type(2) {
       text-align: right; }
-  #cta-form form {
+  #cta-form .form-container {
     padding: 1.5em 3em;
     border: 0.125em solid black; }
-    #cta-form form input {
+    #cta-form .form-container input {
       padding: 0.5em 0em;
       text-align: center;
       font-size: 1em;
