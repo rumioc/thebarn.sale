@@ -107,31 +107,7 @@ z-index: 20;
                 text-align: right;
         }
     }  
-    .form-container {
-        //margin: 0px auto;
-        padding: ($spacing-unit) ($spacing-unit * 2);
-        border: ($base-font-size / 8) solid black;
-        
-        input {
-            
-            padding: ($base-font-size * .5) 0em;
-            text-align: center;
-            font-size: $base-font-size;
-            margin: 0px;
-            margin-top: $spacing-unit;  
-            vertical-align: middle;
-            width: 98%;  
-            border-bottom: ($base-font-size / 6) dotted black;
-            font-weight: bold;
-        }
-    }
-    .button {
-        font-size: $base-font-size;
-        float: right;
-        &:hover {
-            color: black;   
-        }
-    }
+   
     .benefits {
         p {
          margin: 0px;  
@@ -142,6 +118,31 @@ z-index: 20;
     }
 }
 
+.form-container {
+    //margin: 0px auto;
+    padding: ($spacing-unit) ($spacing-unit * 2);
+    border: ($base-font-size / 8) solid black;
+    
+    input {
+        
+        padding: ($base-font-size * .5) 0em;
+        text-align: center;
+        font-size: $base-font-size;
+        margin: 0px;
+        margin-top: $spacing-unit;  
+        vertical-align: middle;
+        width: 98%;  
+        border-bottom: ($base-font-size / 6) dotted black;
+        font-weight: bold;
+    }
+    .submit-button {
+        font-size: $base-font-size;
+        float: right;
+        &:hover {
+            color: black;   
+        }
+    }
+}
 
 
 #cta-info {
@@ -326,6 +327,10 @@ color: black;
  * Footer
  */
 
+.site-footer .form-container {
+        border: 0px solid white;
+}
+
 .footer-signup {
 
     margin: ($spacing-unit * 4) auto 0em auto;
@@ -355,40 +360,7 @@ color: black;
             }
         }
     }
-        
-    input {
-            
-        padding: ($base-font-size * .5) 0em;
-        text-align: center;
-        font-size: $base-font-size;
-        margin: 0px;
-        margin-top: $spacing-unit;  
-        vertical-align: middle;
-        
-        @include media-query($medium) {
-            & {
-                text-align: left;
-                font-size: $base-font-size;
-            }
-        }
-            
-        &[type="email"] {
-            width: 65%;  
-            border-bottom: ($base-font-size / 6) dotted black;
-            text-align: center;
-            font-weight: bold;
-        }
-            
-        &[type="submit"] {
-            float: right;
-            text-align: center;
-            
-                &:hover {
-                    color: black;   
-                }
-            }
-        }
-    }
+}
    
    
 /*
@@ -451,7 +423,8 @@ color: black;
 
     
 
-.button {
+.button,
+.submit-button {
     position: relative;
     top: 0px;
 width: 90%;

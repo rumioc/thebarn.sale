@@ -283,28 +283,29 @@ header {
     text-align: left; }
     #cta-form h3:nth-of-type(2) {
       text-align: right; }
-  #cta-form .form-container {
-    padding: 1.5em 3em;
-    border: 0.125em solid black; }
-    #cta-form .form-container input {
-      padding: 0.5em 0em;
-      text-align: center;
-      font-size: 1em;
-      margin: 0px;
-      margin-top: 1.5em;
-      vertical-align: middle;
-      width: 98%;
-      border-bottom: 0.16667em dotted black;
-      font-weight: bold; }
-  #cta-form .button {
-    font-size: 1em;
-    float: right; }
-    #cta-form .button:hover {
-      color: black; }
   #cta-form .benefits p {
     margin: 0px; }
     #cta-form .benefits p:first-of-type {
       margin-top: 0.75em; }
+
+.form-container {
+  padding: 1.5em 3em;
+  border: 0.125em solid black; }
+  .form-container input {
+    padding: 0.5em 0em;
+    text-align: center;
+    font-size: 1em;
+    margin: 0px;
+    margin-top: 1.5em;
+    vertical-align: middle;
+    width: 98%;
+    border-bottom: 0.16667em dotted black;
+    font-weight: bold; }
+  .form-container .submit-button {
+    font-size: 1em;
+    float: right; }
+    .form-container .submit-button:hover {
+      color: black; }
 
 @media screen and (min-width: 48em) {
   #cta-info .wrapper {
@@ -441,6 +442,9 @@ header {
 /*
  * Footer
  */
+.site-footer .form-container {
+  border: 0px solid white; }
+
 .footer-signup {
   margin: 6em auto 0em auto; }
   .footer-signup .wrapper {
@@ -456,27 +460,6 @@ header {
     @media screen and (min-width: 48em) {
       .footer-signup h2 {
         text-align: left; } }
-  .footer-signup input {
-    padding: 0.5em 0em;
-    text-align: center;
-    font-size: 1em;
-    margin: 0px;
-    margin-top: 1.5em;
-    vertical-align: middle; }
-    @media screen and (min-width: 48em) {
-      .footer-signup input {
-        text-align: left;
-        font-size: 1em; } }
-    .footer-signup input[type="email"] {
-      width: 65%;
-      border-bottom: 0.16667em dotted black;
-      text-align: center;
-      font-weight: bold; }
-    .footer-signup input[type="submit"] {
-      float: right;
-      text-align: center; }
-      .footer-signup input[type="submit"]:hover {
-        color: black; }
 
 /*
  * MODAL STYLES
@@ -524,7 +507,8 @@ header {
   -moz-box-shadow: 11px 10px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 11px 10px 10px 0px rgba(0, 0, 0, 0.75); }
 
-.button {
+.button,
+.submit-button {
   position: relative;
   top: 0px;
   width: 90%;
