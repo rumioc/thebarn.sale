@@ -47,7 +47,6 @@ address {
 header {
     text-align: center;
 
-
     h1 {
         padding-top: $spacing-unit / 3.5;
         font-family: Oswald, sans-serif;
@@ -62,7 +61,7 @@ header {
         font-size: $base-font-size * 2.5;
         color: red;
     }
-
+    
 }
 
 #social-media {
@@ -71,14 +70,14 @@ top: $spacing-unit / 8;
 right: $spacing-unit / 4;
 z-index: 20;
 
-.fb-share-button {
+    .fb-share-button {
     
-}
+    }
 
-.twitter-share-button {
-    vertical-align: bottom;
-    width: ($base-font-size * 4) !important;
-}
+    .twitter-share-button {
+        vertical-align: bottom;
+        width: ($base-font-size * 4) !important;
+    }
 }
 
 /*
@@ -385,7 +384,10 @@ color: black;
          vertical-align: middle; 
          font-weight: bold;
          background-color: white;
-         //border-bottom: ($base-font-size / 6) dotted black;
+         
+         .submit-button {
+             background-color: #b32317; 
+         }
      }
      textarea {
       width: 100%;
@@ -398,24 +400,7 @@ color: black;
       padding: ($base-font-size * .5) 0em;
       border: 0px solid white;
      }
-     .submit {
-         width: 40%;
-         font-size: 2em;
-         font-family: oswald;
-         margin: .5em auto;
-         display: block;
-         text-align: center;
-         padding:.5em 0px;
-         background-color: #b32317; 
-         font-weight: bold;
-         color: white;
-         text-decoration: none;
-         text-transform: uppercase;
-         border: 0px solid transparent;
-         -webkit-box-shadow: 11px 10px 10px 0px rgba(0,0,0,0.75);
-         -moz-box-shadow: 11px 10px 10px 0px rgba(0,0,0,0.75);
-         box-shadow: 11px 10px 10px 0px rgba(0,0,0,0.75);
-     }
+     
     }
 }
 
@@ -425,23 +410,23 @@ color: black;
 
 .button,
 .submit-button {
-    position: relative;
-    top: 0px;
-width: 90%;
-font-size: 2em;
-font-family: oswald;
-margin: .5em auto;
-display: block;
-text-align: center;
-padding:.5em 0px;
-background-color: #b32317; 
-font-weight: bold;
-color: white;
-text-decoration: none;
-text-transform: uppercase;
-border: 0px solid transparent;
--webkit-box-shadow: 11px 10px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 11px 10px 10px 0px rgba(0,0,0,0.75);
-box-shadow: 11px 10px 10px 0px rgba(0,0,0,0.75);
+	position: relative;
+	top: 0px;
+	width: 90%;
+	font-size: 2em;
+	font-family: oswald;
+	margin: .5em auto;
+	display: block;
+	text-align: center;
+	padding:.5em 0px;
+        background-color: #b32317 !important; 
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 0px solid transparent;
+	-webkit-box-shadow: 11px 10px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 11px 10px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 11px 10px 10px 0px rgba(0,0,0,0.75);
 
 }

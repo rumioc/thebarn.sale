@@ -525,7 +525,7 @@ function showModal(content) {
             position: "absolute", 
             top: "-5px", 
             right: "0px",
-            color: "white",
+            color: "black",
             padding: "5px 10px", 
             cursor: "pointer",
         }
